@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: HNUSBoot
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb?userUnicode=true&characterEncoding=UTF8&useSSL=false&useAffectedRows=true&useLegacyDatetimeCode=false&serverTimezone=CTT&useJDBCCompliantTimezoneShift=true
+    username: readboy
+    password: *******.
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+mybatis-plus:
+  mapper-locations: classpath*:xml/*.xml
+  global-config:
+    id-type: 3
